@@ -24,7 +24,13 @@ git clone https://github.com/AnthonyMdM/Projeto-Fortnite.git
 cd Projeto-Fortnite
 ```
 
-### **2. Configurar variáveis de ambiente**
+### **2. Instalar dependências**
+
+```bash
+npm install
+```
+
+### **3. Configurar variáveis de ambiente**
 
 Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
 
@@ -35,12 +41,6 @@ AUTH_SECRET="sua-chave-secreta-aqui" //Pode gerar uma chave com o comando: npx a
 AUTH_TRUST_HOST="true"
 AUTH_URL="http://localhost:3000"
 NODE_ENV="development"
-```
-
-### **3. Instalar dependências**
-
-```bash
-npm install
 ```
 
 ### **4. Subir o banco de dados PostgreSQL com Docker**
