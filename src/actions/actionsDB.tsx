@@ -7,6 +7,9 @@ import { prisma } from "@/src/lib/prisma";
 import { ItemsBuy, OfferBuy } from "@prisma/client";
 
 export async function findUser(id: number) {
+  if (id === undefined || id === null) {
+    return null;
+  }
   const user = await prisma.user.findUnique({
     where: { id },
   });
